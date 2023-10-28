@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="830.0" prefWidth="1530.0" style="-fx-background-color: #152238;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.shopManagement.controller.DashboardPageFormController">
+   <children>
+      <AnchorPane layoutX="38.0" layoutY="33.0" prefHeight="752.0" prefWidth="236.0" style="-fx-background-color: #000328; -fx-background-radius: 50;">
+         <children>
+            <JFXButton layoutX="19.0" layoutY="118.0" onAction="#dashboardBtnOnAction" prefHeight="55.0" prefWidth="199.0" ripplerFill="WHITE" style="-fx-background-radius: 50;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-dashboard-layout-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="employeeBtn" layoutX="19.0" layoutY="191.0" onAction="#employeeBtnOnAction" prefHeight="55.0" prefWidth="199.0" ripplerFill="WHITE" style="-fx-background-radius: 50;" text=" Employee" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-staff-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="customerBtn" layoutX="19.0" layoutY="263.0" onAction="#customerBtnOnAction" prefHeight="55.0" prefWidth="199.0" ripplerFill="WHITE" style="-fx-background-radius: 50;" text=" Customer" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-customer-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="19.0" layoutY="336.0" onAction="#supplierBtnOnAction" prefHeight="55.0" prefWidth="199.0" ripplerFill="WHITE" style="-fx-background-radius: 50;" text="  Supplier" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-supplier-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="19.0" layoutY="409.0" onAction="#itemBtnOnAction" prefHeight="55.0" prefWidth="199.0" ripplerFill="WHITE" style="-fx-background-radius: 50;" text="     Items" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-open-box-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="19.0" layoutY="488.0" onAction="#orderBtnOnAction" prefHeight="55.0" prefWidth="199.0" ripplerFill="WHITE" style="-fx-background-radius: 50;" text="    Order" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-shopping-cart-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="19.0" layoutY="563.0" onAction="#signBtnOnAtion" prefHeight="55.0" prefWidth="199.0" ripplerFill="WHITE" style="-fx-background-radius: 50;" text="Sign Out" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-sign-out-48%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane fx:id="root1" layoutX="302.0" layoutY="-6.0" prefHeight="830.0" prefWidth="1228.0" style="-fx-background-color: #152238;" />
+   </children>
+</AnchorPane>

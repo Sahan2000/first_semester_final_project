@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="830.0" prefWidth="1228.0" style="-fx-background-color: #152238;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.shopManagement.controller.SupplierManageFormController">
+   <children>
+      <Label layoutX="434.0" layoutY="9.0" prefHeight="83.0" prefWidth="443.0" text="Supplier Manage" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Label>
+      <Label layoutX="75.0" layoutY="152.0" prefHeight="34.0" prefWidth="216.0" text="Supplier ID :-" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Label>
+      <JFXTextField fx:id="txtId" editable="false" focusColor="WHITE" layoutX="234.0" layoutY="153.0" onAction="#searchOnAction" onKeyReleased="#txtIdOnKeyReleased" prefHeight="34.0" prefWidth="242.0" style="-fx-text-fill: white;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <Label layoutX="642.0" layoutY="152.0" prefHeight="34.0" prefWidth="216.0" text="Supplier Name :-" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Label>
+      <JFXTextField fx:id="txtName" focusColor="WHITE" layoutX="868.0" layoutY="152.0" onKeyReleased="#txtNameOnKeyReleased" prefHeight="34.0" prefWidth="242.0" style="-fx-text-fill: white;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <Label layoutX="75.0" layoutY="265.0" prefHeight="34.0" prefWidth="216.0" text="Company Name :-" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Label>
+      <JFXTextField fx:id="txtCompany" focusColor="WHITE" layoutX="301.0" layoutY="265.0" onKeyReleased="#txtCompanyOnKeyReleased" prefHeight="34.0" prefWidth="242.0" style="-fx-text-fill: white;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <Label layoutX="642.0" layoutY="265.0" prefHeight="34.0" prefWidth="216.0" text="Contact No :-" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.24" />
+         </effect>
+      </Label>
+      <JFXTextField fx:id="txtContact" focusColor="WHITE" layoutX="868.0" layoutY="251.0" onKeyReleased="#txtContactOnKeyReleased" prefHeight="59.0" prefWidth="242.0" style="-fx-text-fill: white;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <TableView fx:id="tblSupplier" layoutX="89.0" layoutY="400.0" onMouseClicked="#supplierTblOnMouseClicked" prefHeight="323.0" prefWidth="975.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="190.6666717529297" text="ID" />
+            <TableColumn fx:id="colName" minWidth="0.0" prefWidth="256.3333282470703" text="Name" />
+            <TableColumn fx:id="colCompanyName" prefWidth="333.3333435058594" text="Company Name" />
+            <TableColumn fx:id="colContact" prefWidth="188.6666259765625" text="Contact" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="1016.0" layoutY="331.0" onAction="#saveBtnOnAction" prefHeight="43.0" prefWidth="96.0" style="-fx-background-radius: 25; -fx-background-color: #7DE5ED;" text="Save">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="910.0" layoutY="331.0" onAction="#updateBtnOnAction" prefHeight="43.0" prefWidth="96.0" style="-fx-background-radius: 25; -fx-background-color: #03C988;" text="Update">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="804.0" layoutY="331.0" onAction="#deleteBtnOnAction" prefHeight="43.0" prefWidth="96.0" style="-fx-background-radius: 25; -fx-background-color: #FF8B8B;" text="Delete">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="698.0" layoutY="331.0" onAction="#clearBtnOnAction" prefHeight="43.0" prefWidth="96.0" style="-fx-background-radius: 25; -fx-background-color: #FFDD83;" text="Clear">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1011.0" layoutY="732.0" onAction="#reportBtnOnAction" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: #62CDFF; -fx-background-radius: 15;" text="Report">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="505.0" layoutY="154.0" onAction="#newBtnOnAction" prefHeight="43.0" prefWidth="96.0" style="-fx-background-radius: 25; -fx-background-color: #7DE5ED;" text="New">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children> 
+</AnchorPane>

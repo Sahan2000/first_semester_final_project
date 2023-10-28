@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="542.0" prefWidth="956.0" style="-fx-background-color: #152238;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.shopManagement.controller.DeliveryManageFormController">
+   <children>
+      <Label layoutX="306.0" layoutY="28.0" prefHeight="52.0" prefWidth="402.0" text="Delivery Management" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="113.0" prefHeight="39.0" prefWidth="146.0" text="Delivery ID :-" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDeliverId" editable="false" layoutX="233.0" layoutY="109.0" prefHeight="39.0" prefWidth="207.0" style="-fx-text-fill: #ffffff;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <Label layoutX="507.0" layoutY="113.0" prefHeight="39.0" prefWidth="130.0" text="Order ID :-" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtOrderId" editable="false" layoutX="637.0" layoutY="109.0" prefHeight="39.0" prefWidth="207.0" style="-fx-text-fill: #ffffff;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <Label layoutX="87.0" layoutY="193.0" prefHeight="39.0" prefWidth="160.0" text="Customer ID :-" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustomerId" editable="false" layoutX="263.0" layoutY="189.0" prefHeight="39.0" prefWidth="207.0" style="-fx-text-fill: #ffffff;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <Label layoutX="507.0" layoutY="193.0" prefHeight="39.0" prefWidth="199.0" text="Customer Name :-" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustomerName" editable="false" layoutX="717.0" layoutY="189.0" prefHeight="39.0" prefWidth="207.0" style="-fx-text-fill: #ffffff;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <Label layoutX="87.0" layoutY="273.0" prefHeight="39.0" prefWidth="217.0" text="Customer Address :-" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustomerAddress" editable="false" layoutX="317.0" layoutY="269.0" prefHeight="39.0" prefWidth="207.0" style="-fx-text-fill: #ffffff;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <Label layoutX="547.0" layoutY="283.0" prefHeight="39.0" prefWidth="138.0" text="Distance :-" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDistance" layoutX="707.0" layoutY="279.0" onAction="#calculateTotal" prefHeight="39.0" prefWidth="207.0" style="-fx-text-fill: #ffffff;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <Label layoutX="87.0" layoutY="363.0" prefHeight="39.0" prefWidth="176.0" text="Delivery Total :-" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDelivertTotal" editable="false" layoutX="263.0" layoutY="363.0" prefHeight="39.0" prefWidth="207.0" style="-fx-text-fill: #ffffff;">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="507.0" layoutY="363.0" prefHeight="39.0" prefWidth="153.0" text="Full Total :-" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNetTotal" editable="false" layoutX="667.0" layoutY="363.0" prefHeight="39.0" prefWidth="207.0" style="-fx-text-fill: #ffffff;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <JFXButton layoutX="616.0" layoutY="469.0" onAction="#btnPlaceOrderOnAction" prefHeight="39.0" prefWidth="146.0" style="-fx-background-color: #C47AFF; -fx-background-radius: 15;" text="Place Order" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="771.0" layoutY="469.0" onAction="#generateBillOnAction" prefHeight="39.0" prefWidth="160.0" style="-fx-background-color: #62CDFF; -fx-background-radius: 15;" text="Generate Bill" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

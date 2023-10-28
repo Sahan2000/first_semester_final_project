@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="830.0" prefWidth="1228.0" style="-fx-background-color: #152238;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.shopManagement.controller.EmployeeManageFormController">
+   <children>
+      <Label layoutX="427.0" layoutY="9.0" prefHeight="86.0" prefWidth="439.0" text="Employee Manage" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="112.0" prefHeight="52.0" prefWidth="214.0" text="Employee ID :-" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtID" editable="false" focusColor="WHITE" layoutX="299.0" layoutY="113.0" onAction="#txtIDOnAction" onKeyReleased="#employeeIdOnKeyReleased" prefHeight="50.0" prefWidth="214.0" style="-fx-text-fill: white;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <Label layoutX="670.0" layoutY="112.0" prefHeight="52.0" prefWidth="262.0" text="Employee Name :-" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" focusColor="WHITE" layoutX="940.0" layoutY="114.0" onKeyReleased="#txtNameOnKeyReleased" prefHeight="50.0" prefWidth="222.0" style="-fx-text-fill: white;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <Label layoutX="85.0" layoutY="217.0" prefHeight="52.0" prefWidth="289.0" text="Employee Address :-" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAddress" focusColor="WHITE" layoutX="382.0" layoutY="218.0" onKeyReleased="#txtAddressOnKeyReleased" prefHeight="50.0" prefWidth="222.0" style="-fx-text-fill: white;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <Label layoutX="671.0" layoutY="218.0" prefHeight="52.0" prefWidth="274.0" text="Employee Salary :-" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSalary" focusColor="WHITE" layoutX="946.0" layoutY="207.0" onKeyReleased="#txtSalaryOnKeyReleased" prefHeight="50.0" prefWidth="222.0" style="-fx-text-fill: white;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <Label layoutX="84.0" layoutY="324.0" prefHeight="52.0" prefWidth="143.0" text="Job Roll :-" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="comboBoxJobRoll" focusColor="WHITE" layoutX="236.0" layoutY="321.0" onAction="#comboBoxJobRollOnAction" prefHeight="54.0" prefWidth="245.0" stylesheets="@../styles/employeeManage.css" unFocusColor="#434040">
+         <styleClass>
+            <String fx:value="list-view" />
+            <String fx:value="combo-box" />
+            <String fx:value="combo-box-base" />
+            <String fx:value="combo-box-popup" />
+            <String fx:value="list-cell" />
+         </styleClass></JFXComboBox>
+      <Label layoutX="668.0" layoutY="321.0" prefHeight="52.0" prefWidth="197.0" text="Contact No :-" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtContact" focusColor="WHITE" layoutX="869.0" layoutY="323.0" onKeyReleased="#txtContactOnKeyReleased" prefHeight="50.0" prefWidth="255.0" style="-fx-text-fill: white;">
+         <font>
+            <Font size="21.0" />
+         </font></JFXTextField>
+      <TableView fx:id="tblEmployee" layoutX="73.0" layoutY="473.0" onMouseClicked="#tblEmployeeOnMouseClick" prefHeight="244.0" prefWidth="1083.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="167.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="185.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="257.6666717529297" text="Address" />
+            <TableColumn fx:id="colSalary" prefWidth="140.0" text="Salary" />
+            <TableColumn fx:id="colJobRoll" prefWidth="173.99996948242188" text="Job Roll" />
+            <TableColumn fx:id="colContactNo" prefWidth="160.33334350585938" text="Contact No" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="733.0" layoutY="414.0" onAction="#clearBtnOnAction" prefHeight="43.0" prefWidth="96.0" style="-fx-background-radius: 25; -fx-background-color: #FFDD83;" text="Clear">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton focusTraversable="false" layoutX="843.0" layoutY="414.0" onAction="#deleteBtnOnAction" prefHeight="43.0" prefWidth="96.0" style="-fx-background-radius: 25; -fx-background-color: #FF8B8B;" text="Delete">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="952.0" layoutY="414.0" onAction="#updateBtnOnAction" prefHeight="43.0" prefWidth="96.0" style="-fx-background-radius: 25; -fx-background-color: #03C988;" text="Update">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1062.0" layoutY="414.0" onAction="#saveBtnOnAction" prefHeight="43.0" prefWidth="96.0" style="-fx-background-radius: 25; -fx-background-color: #7DE5ED;" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1057.0" layoutY="743.0" onAction="#reportBtnOnAction" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: #62CDFF; -fx-background-radius: 15;" text="Report">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="519.0" layoutY="117.0" onAction="#newBtnOnAction" prefHeight="43.0" prefWidth="96.0" style="-fx-background-radius: 25; -fx-background-color: #6C9BCF;" text="New">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
